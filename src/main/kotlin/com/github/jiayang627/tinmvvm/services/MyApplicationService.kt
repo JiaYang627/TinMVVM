@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.jiayang627.tinmvvm.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.jiayang627.tinmvvm.MyBundle
 
 class MyApplicationService {
 
