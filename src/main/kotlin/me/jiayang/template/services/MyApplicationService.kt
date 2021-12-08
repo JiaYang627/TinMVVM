@@ -1,6 +1,6 @@
-package com.github.jiayang627.tinmvvm.services
+package me.jiayang.template.services
 
-import com.github.jiayang627.tinmvvm.MyBundle
+import me.jiayang.template.MyBundle
 
 class MyApplicationService {
 

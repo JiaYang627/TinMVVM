@@ -1,4 +1,4 @@
-package com.github.jiayang627.tinmvvm
+package me.jiayang
 
 import com.intellij.ide.highlighter.XmlFileType
 import com.intellij.psi.xml.XmlFile

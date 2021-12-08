@@ -1,4 +1,4 @@
-package com.github.jiayang627.tinmvvm
+package me.jiayang.template
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

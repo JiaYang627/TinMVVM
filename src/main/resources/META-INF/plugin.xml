@@ -1,18 +1,24 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.jiayang627.tinmvvm</id>
+    <id>me.jiayang.tinmvvm</id>
     <name>TinMVVM</name>
-    <vendor>jiayang627</vendor>
+    <vendor>jiayang</vendor>
 
+    <depends>org.jetbrains.android</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>com.intellij.modules.java</depends>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.jiayang627.tinmvvm.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.jiayang627.tinmvvm.services.MyProjectService"/>
+        <applicationService serviceImplementation="me.jiayang.template.services.MyApplicationService"/>
+        <projectService serviceImplementation="me.jiayang.template.services.MyProjectService"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.jiayang627.tinmvvm.listeners.MyProjectManagerListener"
+        <listener class="me.jiayang.template.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+    <extensions defaultExtensionNs="com.android.tools.idea.wizard.template">
+        <wizardTemplateProvider implementation="me.jiayang.tinmvvm.SamplePluginTemplateProviderImpl" />
+    </extensions>
 </idea-plugin>
