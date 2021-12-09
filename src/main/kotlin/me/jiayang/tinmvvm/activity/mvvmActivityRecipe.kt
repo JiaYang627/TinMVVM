@@ -35,13 +35,13 @@ fun RecipeExecutor.mvvmActivityRecipe(
         generateManifest(
             moduleData = moduleTemplateData,
             activityClass = "${mPageName}Activity",
-            packageName = ".$mActivityPackageName",
+            packageName = ".${mActivityPackageName.replace("/",".")}",
             isLauncher = false,
             hasNoActionBar = false,
-            generateActivityTitle = true
+            generateActivityTitle = false
         )
 
-        val mvvmActivity = mvvmActivityKt(mRootPackageName, mActivityPackageName, mPageName)
+        val mvvmActivity = mvvmActivityKt(mRootPackageName, mActivityPackageName.replace("/","."), mPageName)
         // 保存Activity
         save(
             mvvmActivity,
@@ -53,20 +53,20 @@ fun RecipeExecutor.mvvmActivityRecipe(
         }
         // 保存viewmodel
         save(
-            mvvmViewModelKt(mRootPackageName, mActivityPackageName, mPageName),
+            mvvmViewModelKt(mRootPackageName, mActivityPackageName.replace("/","."), mPageName),
             srcOut.resolve("${mActivityPackageName}/${mPageName}ViewModel.${ktOrJavaExt}")
         )
         // 保存repository
         save(
-            mvvmRepositoryKt(mRootPackageName, mActivityPackageName, mPageName),
+            mvvmRepositoryKt(mRootPackageName, mActivityPackageName.replace("/","."), mPageName),
             srcOut.resolve("${mActivityPackageName}/${mPageName}Repository.${ktOrJavaExt}")
         )
     } else if (mIsFragment){
         val mvvmFragment: String = if (mIsLazyFragment) {
 
-            mvvmLazyFragmentKt(mRootPackageName, mFragmentPackageName, mPageName)
+            mvvmLazyFragmentKt(mRootPackageName, mFragmentPackageName.replace("/","."), mPageName)
         } else {
-            mvvmFragmentKt(mRootPackageName, mFragmentPackageName, mPageName)
+            mvvmFragmentKt(mRootPackageName, mFragmentPackageName.replace("/","."), mPageName)
         }
 
         // 保存Fragment
@@ -80,12 +80,12 @@ fun RecipeExecutor.mvvmActivityRecipe(
         }
         // 保存viewmodel
         save(
-            mvvmViewModelKt(mRootPackageName, mFragmentPackageName, mPageName),
+            mvvmViewModelKt(mRootPackageName, mFragmentPackageName.replace("/","."), mPageName),
             srcOut.resolve("${mFragmentPackageName}/${mPageName}ViewModel.${ktOrJavaExt}")
         )
         // 保存repository
         save(
-            mvvmRepositoryKt(mRootPackageName, mFragmentPackageName, mPageName),
+            mvvmRepositoryKt(mRootPackageName, mFragmentPackageName.replace("/","."), mPageName),
             srcOut.resolve("${mFragmentPackageName}/${mPageName}Repository.${ktOrJavaExt}")
         )
     }

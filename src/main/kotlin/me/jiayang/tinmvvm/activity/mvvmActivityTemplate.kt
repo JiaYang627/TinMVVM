@@ -80,7 +80,7 @@ val mvvmActivityTemplate
             constraints = listOf(Constraint.NONEMPTY)
             default = "ui"
             visible = { mIsActivity.value }
-            help = "Activity 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名 (基于 Root Package Name )"
+            help = "Activity 将被输出到此包下,使用二级目录请使用/ ,PS:ui/test,请认真核实此包名是否是你需要输出的目标包名 (基于 Root Package Name )"
         }
 
         val mFragmentLayoutName = stringParameter {
@@ -102,7 +102,7 @@ val mvvmActivityTemplate
             constraints = listOf(Constraint.NONEMPTY)
             default = "ui"
             visible = { mIsFragment.value }
-            help = "Fragment 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名 (基于 Root Package Name )"
+            help = "Fragment 将被输出到此包下,使用二级目录请使用/ ,PS:ui/test,请认真核实此包名是否是你需要输出的目标包名 (基于 Root Package Name )"
         }
 
 //    val mIsUseHilt = booleanParameter {
