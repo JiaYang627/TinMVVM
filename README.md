@@ -181,8 +181,7 @@ class SamplePluginTemplateProviderImpl: WizardTemplateProvider() {
   * 添加三个 depends
   * 添加extensions 指定`defaultExtensionNs` 为 `com.android.tools.idea.wizard.template`，`wizardTemplateProvider` 为创建的`SamplePluginTemplateProviderImpl`类
   * 此处注意，一定要写全路径，包名一定一定一定要写上,4.X版本编写的时候 网上的文章都没有写，个人不清楚4.X版本是否真的不用写全路径
-    ![AndroidStudioLog](http://m.qpic.cn/psc?/V14YlNrL2eQEkW/TmEUgtj9EK6.7V8ajmQrELZ0nze9UlwU0hlIlNznzA4R3pfthA9lPYlj9jkGtjQk5TXDv7dtLp0mXLwfta177V*CMa8UXzNzzLMTLSvgm1M!/b&bo=agY4BAAAAAADVyI!&rf=viewer_4&t=5)
-
+    
 
 ```
 <idea-plugin>
@@ -232,7 +231,8 @@ class SamplePluginTemplateProviderImpl: WizardTemplateProvider() {
     * widgets:将编写的Template对象放入。
     * recipe :设置具体替换对象。此处在`activity`文件夹下创建`mvvmActivityRecipe`的kt文件，将需要的值通过参数传入
     * `mvvmActivityRecipe`下根据类型写了 创建act viewmodel repository 等，这些看代码即可，具体act viewmodel repository 看代码即可，这里简单说明一下 就是创建方法，然后 返回值为 string内容，内容写基础内容即可，放一个activity的内容吧，具体根据自己项目替换即可
-  * 文件代码内容如下:
+  * 编写template 必须给default 值错误日志图、文件代码内容如下:
+    ![AndroidStudioLog](http://m.qpic.cn/psc?/V14YlNrL2eQEkW/TmEUgtj9EK6.7V8ajmQrELZ0nze9UlwU0hlIlNznzA4R3pfthA9lPYlj9jkGtjQk5TXDv7dtLp0mXLwfta177V*CMa8UXzNzzLMTLSvgm1M!/b&bo=agY4BAAAAAADVyI!&rf=viewer_4&t=5)
 
 ```
 
