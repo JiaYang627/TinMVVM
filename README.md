@@ -506,6 +506,16 @@ class ${mPageName}Activity : BaseActivity<Activity${mPageName}Binding>() {
 #### 编译
 编写好后 点击 Gradle - Task - Build - jar，编译好后 会在 项目根目录-build-libs文件夹下生成jar包，名字为 项目名-版本号.jar
 
+可能你的Gradle 页面是这样的:
+
+![Gradle-No-Task](http://m.qpic.cn/psc?/V14YlNrL2eQEkW/TmEUgtj9EK6.7V8ajmQrEPShRQnwYV4WA2oABXa2wJbFTRI0mkesF5wQRvGuWvqH0D4Dbg*79qsKJH4U2i4q8NKv46WYhr*5ttMY2P10PRw!/b&bo=zgFRAgAAAAABF6w!&rf=viewer_4&t=5)
+
+点击`Task list not built..`
+
+去掉`Gradle` 下第一个 `Do not build Gradle task list ..`的勾选
+
+![Gradle-Setting](http://m.qpic.cn/psc?/V14YlNrL2eQEkW/TmEUgtj9EK6.7V8ajmQrEJtIPB2GbSyunO.0JVBvJl1bBLp0txCQPU9BcuhW1SWTIqDijFCW75hxDgZCO1tJASiCFouK7NEm5V5ZL3JO2Tc!/b&bo=sAU4BAAAAAADJ4s!&rf=viewer_4&t=5)
+
 拿着编译好的jar包，打开AS `Settings/Preferences` > `Plugins` > `⚙️` > `Install plugin from disk...` > `RESTART IDE`
 
 点击`app` 或者`包名` 右键使用模板
