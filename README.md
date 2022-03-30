@@ -520,9 +520,9 @@ class ${mPageName}Activity : BaseActivity<Activity${mPageName}Binding>() {
 
 点击`app` 或者`包名` 右键使用模板
 
-![TemplateUse](http://m.qpic.cn/psc?/V14YlNrL2eQEkW/TmEUgtj9EK6.7V8ajmQrEN.eHrY7PKL3bMie9TC*jyaRObxfv3KgrDGQK3fogi*EHzRTZwhSLhCV7xgkqCAZw.nZhIqLtME3Cqs2F0TtoP0!/b&bo=OAQiBQAAAAADNwk!&rf=viewer_4&t=5)
+![TemplateUse](http://photogz.photo.store.qq.com/psc?/V14YlNrL2eQEkW/TmEUgtj9EK6.7V8ajmQrEN.eHrY7PKL3bMie9TC*jyaRObxfv3KgrDGQK3fogi*EHzRTZwhSLhCV7xgkqCAZw06DBCysoWVBk6eT7potQGU!/b&bo=OAQiBQAAAAADNwk!&rf=viewer_4)
 
-![TemplateDeatils](http://m.qpic.cn/psc?/V14YlNrL2eQEkW/TmEUgtj9EK6.7V8ajmQrEDQA*swxVTzKroR6O124z9uhkyXJdgcWiJoKhX*O8vug5X20gBWW1RbR2swglnadFpTA2cH05nPSqkhbr11CeWg!/b&bo=rwU4BAAAAAADF6Q!&rf=viewer_4&t=5)
+![TemplateDetails](http://m.qpic.cn/psc?/V14YlNrL2eQEkW/TmEUgtj9EK6.7V8ajmQrEDQA*swxVTzKroR6O124z9uhkyXJdgcWiJoKhX*O8vug5X20gBWW1RbR2swglnadFpTA2cH05nPSqkhbr11CeWg!/b&bo=rwU4BAAAAAADF6Q!&rf=viewer_4&t=5)
 
 #### 最后
 编写匆忙 恐有疏漏 如有不足尽情谅解
